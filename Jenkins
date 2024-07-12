@@ -4,7 +4,7 @@ pipeline {
     // Define a string variable for the namespace
     parameters {
         string(name: 'NAMESPACE')
-        string(name: 'IMAGE_TAGS')
+        string(name: 'IMAGE_NAME')
     }
 
     stages {
