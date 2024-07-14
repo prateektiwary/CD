@@ -25,7 +25,7 @@ pipeline {
               stage('Image Validation') {
             steps {
                 script {
-                    def result = sh(returnStdout: true, script: "gcloud artifacts docker images list ${params.IMAGE_NAME} --include-tags")
+                    def result = sh(returnStdout: true, script: "gcloud artifacts docker images list ${params.IMAGE_NAME} ")
                     if (result.trim() != "") {
                         echo "Image ${params.IMAGE_NAME} exists in Artifact Registry!"
                     } else {
