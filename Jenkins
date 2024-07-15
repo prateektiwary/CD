@@ -50,7 +50,7 @@ pipeline {
         stage('cluster login') {
             steps {
                 script {
-                    sh 'gcloud container clusters get-credentials cicd-cluster --zone us-central1-c --project oval-cyclist-426414-p0'
+                    sh 'gcloud container clusters get-credentials cicd-cluster --zone europe-west1-c --project oval-cyclist-426414-p0'
                     //sh 'kubectl get nodes'
                 }
             }
