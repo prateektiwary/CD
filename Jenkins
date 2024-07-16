@@ -22,7 +22,6 @@ pipeline {
         //         }
         //     }
         // }
-              [4:15 PM] Deepanshu Goswami
 stage('Validate Docker Image') {
 
             steps {
